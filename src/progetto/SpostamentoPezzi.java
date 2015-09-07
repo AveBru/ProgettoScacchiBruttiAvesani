@@ -107,7 +107,7 @@ public class SpostamentoPezzi implements MouseListener, MouseMotionListener {
 					JButton nuovaPartita = new JButton();
 					nuovaPartita.setSize(138,100);
 					nuovaPartita.setLocation(750, 225);
-					ImageIcon backgroundB = new ImageIcon("../ProgettoScacchi/immagini/backgroundB.png");
+					ImageIcon backgroundB = new ImageIcon("../ProgettoScacchiBruttiAvesani/immagini/backgroundB.png");
 					nuovaPartita.setIcon(backgroundB);
 					nuovaPartita.setVisible(true);
 					chessGui.add(nuovaPartita);
