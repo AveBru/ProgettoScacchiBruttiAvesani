@@ -51,7 +51,7 @@ public class MovimentoValido {
 				movimentoPezzoValido = movimentoValidoCavallo(vecchiaRiga,vecchiaColonna,nuovaRiga,nuovaColonna);
 				break;
 			case pedina:
-				movimentoPezzoValido = movimentoValidoPedone(vecchiaRiga,vecchiaColonna,nuovaRiga,nuovaColonna);
+				movimentoPezzoValido = movimentoValidoPedina(vecchiaRiga,vecchiaColonna,nuovaRiga,nuovaColonna);
 				break;
 			case regina:
 				movimentoPezzoValido = movimentoValidoRegina(vecchiaRiga,vecchiaColonna,nuovaRiga,nuovaColonna);
@@ -124,7 +124,7 @@ public class MovimentoValido {
 	 * mentre nel caso il pedone sia nero viene mosso verso il basso.
 	 * nel caso in cui ci sia un pezzo nemico nelle caselle anteriori diagonali viene concesso il movimento e quindi la mangiata.
 	 */
-	public boolean movimentoValidoPedone(int vecchiaRiga, int vecchiaColonna, int nuovaRiga, int nuovaColonna) {
+	public boolean movimentoValidoPedina(int vecchiaRiga, int vecchiaColonna, int nuovaRiga, int nuovaColonna) {
 		if(casellaLibera()){
 			if(vecchiaColonna == nuovaColonna){
 				if(vecchioPezzo.getColore() == bianco){
